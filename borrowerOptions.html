@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../../js/validate.js"></script>
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="navBar">
+    <div class="logo">
+      <a href="../homepage.html">
+        <img src="../../assets/books.jpg" alt="book">
+      </a>
+    </div>
+  </div>
+  <br> </br>
+  <br> </br>
+  <div class = "usergreeting">
+    <div class="usergreeting">
+      <script>
+        var username = localStorage.getItem("username");
+        document.write("Welcome, " + username + " !");
+    </script>
+    </div>
+  </div>
+  <div class="borrowerOptions">
+    <div class="borrowerCheckout">
+      <a href="./checkoutBook.html">
+        <button>Borrow a book </button>
+      </a>
+    </div>
+    <div class="borrowerReturn">
+      <a href="./returnBook.html">
+        <button>Return a book</button>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
