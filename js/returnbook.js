@@ -33,7 +33,8 @@ function returnbook()
     xhr.send(JSON.stringify(data));
     xhr.onreadystatechange = function() {
         if ( xhr.status === 200) {
-            alert("Book return successfully");
+            alert("Book returned successfully");
+            window.location.reload();
             xhr.onreadystatechange = null;
         }
         else if(xhr.status !== 200){
