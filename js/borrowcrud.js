@@ -34,6 +34,7 @@ function borrowbook()
     xhr.onreadystatechange = function() {
         if ( xhr.status === 200) {
             alert("Book borrowed successfully");
+            window.location.reload();
             xhr.onreadystatechange = null;
         }
         else if(xhr.status !== 200){
