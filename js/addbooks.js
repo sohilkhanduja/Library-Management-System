@@ -26,6 +26,7 @@ function addBooks()
     xhr.onreadystatechange = function() {
         if ( xhr.status === 200) {
             alert("Book added successfully");
+            window.location.reload();
             xhr.onreadystatechange = null;
         }
         else
