@@ -76,10 +76,18 @@
           <a href="./adminBooks.html">
             <button class="cancel">Cancel</button>
           </a>
-          <a href="./adminBooks.html">
-            <button class="cancel">Reset</button>
-        </a>
-          <button type="submit" class="update" onclick="addBooks()">Add Book</button>
+          <script>
+            function clearForm() {
+              document.getElementById("title").value = "";
+              document.getElementById("author").value = "";
+              document.getElementById("year_written").value = "";
+              document.getElementById("edition").value = "";
+              document.getElementById("price").value = "";
+              document.getElementById("isbn").value = "";
+            }
+          </script>
+            <button class="cancel" onclick="clearForm()">Reset  </button>
+           <button type="submit" class="update" onclick="addBooks()" onclick = "clearForm()">Add Book</button>
           
       </div>
     </div>
