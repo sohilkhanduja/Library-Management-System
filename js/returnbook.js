@@ -35,6 +35,7 @@ function returnbook()
         if ( xhr.status === 200) {
             alert("Book returned successfully");
             window.location.reload();
+            window.location.reload();
             xhr.onreadystatechange = null;
         }
         else if(xhr.status !== 200){
