@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/borrowcrud.js"></script>
+  <script src="../../js/search.js"></script>
+  <script src="../../js/bookCRUD.js"></script>
+  <link rel="icon" type="image/x-icon" href="/assets/read.png">
+</head>
+
+<body>
+  <div class="navBar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../../assets/books.jpg" alt="book">
+      </a>
+    </div>
+  </div>
+  <div class="table_container table-responsive">
+    <h2>Books Available</h2>
+    <div class="search">
+      <input type="text" id="search" placeholder="Search..">
+      <br> </br>
+      <button type="button" class="btn1" onclick="search()">Search</button>
+      <button type="button" class="btn btn-primary" onclick="getAllBooks()">Show all books</button>
+    </div>
+    <br> </br>
+    <table id="table" class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Book Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Year written</th>
+          <th scope="col">Publisher</th>
+          <th scope="col">Price</th>
+          <th scope="col">ISBN</th>
+        </tr>
+      </thead>
+      </table>
+    </div>
+    <div class="submit_bttns">
+      <a href="./borrowerOptions.html">
+        <button class="cancel">Cancel</button>
+      </a>
+      <!-- <a href="borrowbook.html"> -->
+        <!-- first clear the table inside-->
+        <button class="checkout" onclick = "borrowbook()">Borrow book</button>
+      <!-- </a> -->
+    </div>
+  </div>
+</body>
+</html>

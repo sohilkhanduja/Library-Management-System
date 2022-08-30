@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Library Management System</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" type="image/x-icon" href="/assets/read.png">
+</head>
+
+<body>
+  <div class="navBar">
+    <div class="logo">
+      <a href="adminDash.html">
+        <img src="../../assets/books.jpg" alt="book">
+      </a>
+    </div>
+  </div>
+  <div class="table_container table-responsive">
+    <h2>Users who have borrowed the books</h2>
+    <table id="table" class="table table-hover table-bordered" onload="getAllBooks()">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Username</th>
+          <th scope="col">ISBN</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+        </tr>
+      </thead>
+      <script type = "module"src="../../js/getallborrowed.js"></script>
+      </table>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
