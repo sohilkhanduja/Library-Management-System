@@ -326,3 +326,8 @@
 .tab{
   tab-size: 2;
 }
+.search {
+  width: 60%;
+  margin-bottom: 20px;
+
+}
