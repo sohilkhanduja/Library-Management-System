@@ -22,11 +22,6 @@ function  getAllBooks() {
                 var cell6 = row.insertCell(5);
                 var date1 = tableData[i].date;
                 var date2  = tableData[i].returnDate;
-                date1 = date1.reverse();
-                date2 = date2.reverse();
-                for(var j = 0; j < date1.length/2; j++) {
-
-                }
                 cell1.innerHTML = "<input type='checkbox' id='checkbox'>";
                 cell4.innerHTML = tableData[i].isbn;
                 cell2.innerHTML = tableData[i].title;
