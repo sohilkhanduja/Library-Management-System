@@ -20,13 +20,19 @@ function  getAllBooks() {
                 var cell4 = row.insertCell(3);
                 var cell5 = row.insertCell(4);
                 var cell6 = row.insertCell(5);
-                // var ce11 1 is checkbox
+                var date1 = tableData[i].date;
+                var date2  = tableData[i].returnDate;
+                date1 = date1.reverse();
+                date2 = date2.reverse();
+                for(var j = 0; j < date1.length/2; j++) {
+
+                }
                 cell1.innerHTML = "<input type='checkbox' id='checkbox'>";
                 cell4.innerHTML = tableData[i].isbn;
                 cell2.innerHTML = tableData[i].title;
                 cell3.innerHTML = tableData[i].author;
-                cell5.innerHTML = tableData[i].date;
-                cell6.innerHTML = tableData[i].returnDate;
+                cell5.innerHTML = date1;
+                cell6.innerHTML = date2;
         }
         }
         xhr.onreadystatechange = null;
